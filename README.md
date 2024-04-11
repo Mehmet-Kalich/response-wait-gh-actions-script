@@ -7,6 +7,9 @@ instance or ECS task from a Github Actions pipeline, but more time needed for th
 This bash script is a perfect way to allow a pause in your github actions pipeline for a site to be properly queried for a 200 ok response code before continuing 
 the pipeline (without having to statically put a sleep step in the script). 
 
+Add the script to the root of your repository, change the URL to your own site and make sure to add the preliminary chmod permissions step (as seen in example usage below)
+before the run site availability check, otherwise the github actions pipeline will fail with a no permissions error.
+
 **URL**
 The URL to poll. Default "http://example.com"
 
