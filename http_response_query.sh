@@ -1,7 +1,9 @@
 #!/bin/bash
+
 URL="https://example.com"
 TIMEOUT=720
 INTERVAL=5
+
 echo "Polling $URL until it returns 200 OK or timeout ($TIMEOUT seconds) occurs..."
 start_time=$(date +%s)
 while true; do
