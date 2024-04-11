@@ -18,19 +18,6 @@ Interval between polling in seconds. Default "5"
 
 **Example usage**
 
-name: Deploy
-
-on:
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Grant execute permissions to the script
         run: chmod +x ./http_response_query.sh
 
